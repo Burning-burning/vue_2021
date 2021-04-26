@@ -1,10 +1,10 @@
 import axios from 'axios'
 import NProgress from 'nprogress'
 import 'nprogress/nprogress.css'
-
+import { BASE_URL } from '../config/index'
 // 初始化一个axios对象
 const instance = axios.create({
-  baseURL: 'http://bingjs.com:83',
+  baseURL: BASE_URL,
   timeout: 20000
 })
 
