@@ -5,6 +5,10 @@
 </template>
 
 <style lang="less">
+@font-face {
+  font-family: 'gjm';
+  src: url('./assets/fonts/guo.ttf');
+}
 * {
   margin: 0;
   padding: 0;

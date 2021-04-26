@@ -46,5 +46,10 @@ const post = async function(url, params) {
   const { data } = await instance.post(url, params)
   return data
 }
+// 创建一个token信息保存到请求头的方法
+const setToken = function() {
+  /* eslint-disable */
+  instance.defaults.headers.common['token'] = sessionStorage.getItem('token')
+}
 
-export { get, post }
+export { get, post, setToken }
